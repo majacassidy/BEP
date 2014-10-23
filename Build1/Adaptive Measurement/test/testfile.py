@@ -15,9 +15,9 @@ from measurement.meas import MeasureFromFile
 f = FileReader("../Resources/dev2_BGscan_1.dat");
 X,Y,Z = f.makeMesh(1,0,6);
 #try the measure function
-print(MeasureFromFile(-89.2,99.3,"../Resources/dev2_BGscan_1.dat")); 
+#print(MeasureFromFile(-89.2,99.3,"../Resources/data_60.dat")); 
 #try the interpolation function
-print(linInterpolate2D(-89.2, 99.3, X, Y, Z, f.x, f.y));
+#print(linInterpolate2D(-89.2, 99.3, X, Y, Z, f.x, f.y));
 
 #plot stuff from the file
 pcolor(X,Y,Z, cmap=cm.RdBu,vmin=Z.min(),vmax=Z.max());
